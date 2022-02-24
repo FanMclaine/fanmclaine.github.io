@@ -16,6 +16,16 @@
     border-radius: 100%;
    }
    
+    .water p {
+     background-color: aqua;
+     border: 1px inset blue;
+     padding: 1rem;
+     margin: 1rem;
+    }
+
+    .hidden {
+      display: none !important;
+     }
   </style>
    <title>Mclnoot_</title>
    <link rel="icon" type="image/x-icon" href="https://images-ext-1.discordapp.net/external/Ixe3ffcglkkopI4N4AkTxsb03CzqO6Ghq_TW_y1AIH4/https/cdn.discordapp.com/avatars/697771701127217173/cfe990c183601db8597a866a46d82264.png">
@@ -53,7 +63,7 @@
         const date = new Date().getDay()
 
         // definitely not stolen from view-source:https://familyfriendly.xyz/ 
-        if(day == 4) {
+        if(chance > 99%) {
             document.getElementById("water").classList.remove("hidden")
         }
     })
