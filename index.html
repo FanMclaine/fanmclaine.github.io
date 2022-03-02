@@ -8,14 +8,22 @@
     max-width: 600px;
     margin: auto;
     background-color: #23272A;
+    border-radius: 15px;
+    padding: 20px; 
     padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     text-align: center;
     color: rgba(234, 240, 246, 0.8);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: justify;
    }
+
+   .hed {
+    text-align: center;
+   }
+
    .avatar {
     vertical-align: middle;
     width: 100px;
@@ -23,38 +31,66 @@
     border-radius: 100%;
    }
    
-    .water p {
-     background-color: blue;
-    }
-   
     a:link {
      color: #40E0D0;
      background-color: transparent;
      text-decoration: none;
+    }
+
+    a:visited {
+     color: #40E0D0;
+     background-color: transparent;
+     text-decoration: none;
+    }
+
+    #the_game {
+     position: top;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 0;
+     width: 100%;
+     z-index: 2;
+    }
+
+    #the_game p {
+     background-color: #ADD8E6;
+     border: 2px solid aqua;
+     padding: 1rem;
+     margin: 1rem;
     }
   </style>
    <title>Mclnoot_</title>
    <link rel="icon" type="image/x-icon" href="https://images-ext-1.discordapp.net/external/Ixe3ffcglkkopI4N4AkTxsb03CzqO6Ghq_TW_y1AIH4/https/cdn.discordapp.com/avatars/697771701127217173/cfe990c183601db8597a866a46d82264.png">
  </head>
  <body style="background-image:url('https://media.discordapp.net/attachments/730755835734786099/948129837359435786/Bg.png');">
+  <div class="hidden" id="the_game">
+    <p>Don't forget to stay hydrated!:)</p>
+  </div>
   <div class="bdy">
-  <img src="https://images-ext-2.discordapp.net/external/OMyFZRTT0Vpm4m-ihqDoqjCQKneeqy7UEfTknuQVDKs/https/cdn.discordapp.com/avatars/697771701127217173/e2b0b7039ded1aca29bad59a13432e3a.png" alt="Avatar" class="avatar">
-  <h2>Mclnoot_</h2>
-  <p><a href=/aboutme>About Me</a> / <a href =/contact>Socials</a> / <a href=/projects>Projects</a></p>
+   <div class="hed">
+    <img src="https://images-ext-2.discordapp.net/external/OMyFZRTT0Vpm4m-ihqDoqjCQKneeqy7UEfTknuQVDKs/https/cdn.discordapp.com/avatars/697771701127217173/e2b0b7039ded1aca29bad59a13432e3a.png" alt="Avatar" class="avatar">
+    <h2>Mclnoot_</h2>
+    <p><a href=/aboutme>About Me</a> / <a href =/contact>Socials</a> / <a href=/projects>Projects</a></p>
+    <br>
+    <hr noshade>
+   </div>
   <br>
-  <hr noshade>
-  <br><br><br>
   <h3>About Me</h3>
-  <p>My name is Mclnoot aka FanMclaine and I am coder, an artist and a dumbass. In terms of coding, I know Python, HTML5 and CSS3. I also have experience with C# and Java.</p>
+  <p>My name is Mclnoot aka FanMclaine and I am coder, an artist and a dumbass. In terms of coding, I know Python, HTML5 and CSS3. I also have experience with C# and Java oh and Javascript as well.</p>
   <p>I am better at vector arts than freestyles and I like to edit images hihihi.(check out my <a href=https://ko-fi.com/mclnoot>ko-fi</a> for proof ;) )</p>
-  <br><br>
+  <br>
   <h3>Social Medias & Contacts</h3>
   <ul style="list-style-type: disc">
-   <li><a href=https://www.reddit.com/user/redditname_mclaine/>My Reddit</a></li>
-   <li><a href=https://www.github.com/FanMclaine>My GitHub</a></li>
-   <li>Discord:<a href=https://youtu.be/OHmmjnEdtx8>Mclnoot_#0751</a></li>
-   <li>Email:<a href=mailto:mclainerudyanto@gmail.com>Mail me</a>
+   <li>My Reddit: <a href=https://www.reddit.com/user/redditname_mclaine/>u/redditname_mclaine</a></li>
+   <li>My GitHub: <a href=https://www.github.com/FanMclaine>FanMclaine</a></li>
+   <li>Discord: <a href=https://youtu.be/OHmmjnEdtx8>Mclnoot_#0751</a></li>
+   <li>Revolt: <a href=https://app.revolt.chat>Mclnooted_</a><small>idk why would you contact me at revolt but aight</small>
+   <li>Email: <a href=mailto:mclainerudyanto@gmail.com>Mail me</a>
   </ul>
+  <br>
+  <h3>Projects</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
   </div>
   <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
   <script>
@@ -72,7 +108,7 @@
 
         // definitely not stolen from view-source:https://familyfriendly.xyz/ 
         if(chance > 99%) {
-            document.getElementById("water").classList.remove("hidden")
+            document.getElementById("the_game").classList.remove("hidden")
         }
     })
   </script>
