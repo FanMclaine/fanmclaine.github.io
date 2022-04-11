@@ -1,3 +1,19 @@
 /* Brapapapapapapapapapapappapapapapapapapap
 paapapapapapapapa skidibab on da da
 */ 
+
+.bdy {
+    padding: 110px 0;
+    height: 200px;
+    font-family: Helvetica;
+    max-width: 600px;
+    margin: auto;
+    text-align: justify;
+   }
+
+   .avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+   }
