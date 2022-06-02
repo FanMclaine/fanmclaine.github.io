@@ -3,16 +3,18 @@
 
 body{
   font-family: Helvetica;
-  background-color: #f4cfa4;
+  background-color: #f7f0e8;
   padding: 10px;
 }
 
 .main {
     font-family: Helvetica;
-    max-width: 600px;
+    padding: 3px;
+    max-width: 50%;
     margin: auto;
     text-align: justify;
     font-size: 15pt;
+    border-radius: 5px;
     }
 
 .avatar {
