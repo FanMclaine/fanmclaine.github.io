@@ -53,3 +53,8 @@ body{
 .header-right {
   float: right;
 }
+
+.contact {
+	align-items: center;
+  vertical-align: middle;
+}
