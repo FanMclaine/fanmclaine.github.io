@@ -3,7 +3,7 @@
 
 body{
   font-family: Helvetica;
-  background-color: #f7f0e8;
+  background-color: #f0eae0;
   padding: 10px;
 }
 
@@ -58,3 +58,20 @@ body{
 	align-items: center;
   vertical-align: middle;
 }
+
+.warning {
+        width: 100%;
+        padding: 10px 0;
+        background-color: red;
+      }
+
+.blink {
+            animation: blinker 1.5s linear infinite;
+            color: red;
+            font-family: sans-serif;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
