@@ -15,6 +15,7 @@ body{
     text-align: justify;
     font-size: 15pt;
     border-radius: 5px;
+    color: #000000;
     }
 
 .avatar {
@@ -41,7 +42,7 @@ body{
  /* Style the header links */
 .header a {
   float: left;
-  color: black;
+  color: #000000;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -75,3 +76,13 @@ body{
                 opacity: 0;
             }
         }
+
+body {
+  background: url("https://c.tenor.com/Fs_RgRdsfC8AAAAd/bruh.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-rendering: -moz-crisp-edges;
+}
