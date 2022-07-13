@@ -1,13 +1,19 @@
 /* turi ip ip ip
 */ 
 
+/* @font-face {
+  font-family: quicksand;
+  src: url(misc/quicksand-regular.ttf);
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body{
-  font-family: Helvetica;
+  font-family: 'Open Sans', sans-serif;
   padding: 10px;
 }
 
 .main {
-    font-family: Helvetica;
     padding: 3px;
     max-width: 55%;
     margin: auto;
@@ -19,9 +25,9 @@ body{
 
 .avatar {
   vertical-align: middle;
-  width: 110px;
-  height: 110px;
-  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
 }
 
 .avatar:hover {
@@ -65,16 +71,6 @@ body{
         background-color: red;
       }
 
-.blink {
-            animation: blinker 1.5s linear infinite;
-            color: red;
-            font-family: sans-serif;
-        }
-        @keyframes blinker {
-            50% {
-                opacity: 0;
-            }
-        }
 
 body {
   background: url("https://c.tenor.com/YB3M7ApTeMkAAAAC/skeleton-dance.gif") no-repeat center fixed;
