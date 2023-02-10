@@ -1,10 +1,11 @@
 let pee;
 switch (new Date().getDay()) {
   case 2:
-    pee = "Javascript kinda cool";
+    pee = "Today's tuesday ඞඞඞ";
     break;
   default:
-    pee = "Today's not tuesday. sad";
+    pee = hidden;
     break;
 }
 document.getElementById("js").innerHTML =  pee;
+
