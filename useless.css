@@ -6,28 +6,41 @@
   src: url(misc/quicksand-regular.ttf);
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fira Code', monospace;
   padding: 1px;
+  background-color: #fff9faff;
+}
+
+a {
+  color: #fd797c;
+}
+
+hr {
+  width: 70% !important;
+  height: 5px;
+  color: #ff9396;
 }
 
 .main {
     padding: 3px;
-    max-width: 60%;
+    max-width: 65%;
     margin: auto;
     text-align: justify;
     font-size: 15pt;
     border-radius: 5px;
     color: #000000;
-    }
+}
 
-.avatar {
+.avatar { 
+  margin-top: 50px;
   vertical-align: middle;
   width: 150px;
   height: 150px;
   border-radius: 80%;
+  transition: 0.7s;
 }
 
 .avatar:hover {
@@ -54,8 +67,13 @@ body{
   font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
+  transition: 0.5s;
 }
 
+.header a:hover {
+  background-color: #ff95af;
+}
+  
 .header-right {
   float: right;
 }
@@ -65,14 +83,29 @@ body{
   vertical-align: middle;
 }
 
+#js {
+  text-align: center;
+}
+
+
+#li {
+  background-color: #fdfdfd;
+  border: 5px solid #fb888b; 
+  border-radius: 5px; 
+  padding: 20px;
+  margin: 10px;
+  margin-left: 50px; 
+  width: 80%;
+}
+
 .warning {
         width: 100%;
         padding: 10px 0;
         background-color: yellow;
-      }
+}
 
 
-body {
+/* body {
   background: url("https://c.tenor.com/YB3M7ApTeMkAAAAC/skeleton-dance.gif") no-repeat center fixed;
   background-size: cover;
   background-repeat: no-repeat;
