@@ -8,6 +8,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
+html {
+  scrollbar-width: thin;
+}
+
 body{
   font-family: 'Fira Code', monospace;
   padding: 1px;
@@ -26,7 +30,7 @@ hr {
 
 .main {
     padding: 3px;
-    max-width: 65%;
+    max-width: 80%;
     margin: auto;
     text-align: justify;
     font-size: 15pt;
@@ -35,7 +39,7 @@ hr {
 }
 
 .avatar { 
-  margin-top: 50px;
+  margin-top: 20px;
   vertical-align: middle;
   width: 150px;
   height: 150px;
@@ -49,6 +53,11 @@ hr {
 
 .hed {
   text-align: center;
+  font-size: 27px;
+}
+
+.h1 {
+  font-size: 35px;
 }
 
 
@@ -104,6 +113,9 @@ hr {
         background-color: yellow;
 }
 
+#donate img {
+  border: 5px solid #fb888b;
+}
 
 /* body {
   background: url("https://c.tenor.com/YB3M7ApTeMkAAAAC/skeleton-dance.gif") no-repeat center fixed;
