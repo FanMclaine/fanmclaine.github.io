@@ -15,7 +15,7 @@ html {
 body{
   font-family: 'Fira Code', monospace;
   padding: 1px;
-  background-color: #fff9faff;
+  background-color: #ffffffff;
 }
 
 a {
@@ -24,7 +24,8 @@ a {
 
 hr {
   width: 70% !important;
-  height: 5px;
+  margin-top: 10px;
+  height: 4px;
   color: #ff9396;
 }
 
@@ -39,7 +40,7 @@ hr {
 }
 
 .avatar { 
-  margin-top: 20px;
+  margin-top: 10px;
   vertical-align: middle;
   width: 150px;
   height: 150px;
@@ -53,11 +54,11 @@ hr {
 
 .hed {
   text-align: center;
-  font-size: 27px;
+  font-size: 30px;
 }
 
 .h1 {
-  font-size: 35px;
+  font-size: 37px;
 }
 
 
