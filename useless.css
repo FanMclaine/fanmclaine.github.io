@@ -10,11 +10,11 @@
 
 html {
   scrollbar-width: thin;
+  scrollbar-color: lightpink;
 }
 
 body{
   font-family: 'Fira Code', monospace;
-  padding: 1px;
   background-color: #ffffffff;
 }
 
@@ -25,8 +25,17 @@ a {
 hr {
   width: 70% !important;
   margin-top: 10px;
-  height: 4px;
-  color: #ff9396;
+  color: #c4c4c4;
+}
+
+.caret {
+  animation: blinker 0.8s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .main {
@@ -93,6 +102,22 @@ hr {
   vertical-align: middle;
 }
 
+.contact a {
+  text-decoration: none;
+}
+
+.github {  
+  background-color: #525252;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.github a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
 #js {
   text-align: center;
 }
@@ -106,8 +131,13 @@ hr {
   margin: 10px;
   margin-left: 50px; 
   width: 80%;
+  overflow: auto;
 }
 
+#posts a{
+  text-decoration: none;
+}
+  
 .warning {
         width: 100%;
         padding: 10px 0;
