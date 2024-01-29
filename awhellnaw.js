@@ -9,3 +9,7 @@ switch (new Date().getDay()) {
 }
 document.getElementById("js").innerHTML =  pee;
 
+function toggleMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
