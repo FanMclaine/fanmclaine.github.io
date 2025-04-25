@@ -7,15 +7,16 @@
 } */
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Tagalog&display=swap');
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: lightpink;
 }
 
 body{
   font-family: 'Fira Code', monospace;
-  background-color: #f5f5f5;
+  background: radial-gradient(circle, #eee2e2, #f5f5f5);
+  color: #222024;
 }
 
 .dark-mode {
@@ -28,9 +29,16 @@ a {
 }
 
 hr {
-  width: 70% !important;
-  margin-top: 10px;
-  color: #c4c4c4;
+  height:2px;
+  border: 0;
+  background: linear-gradient(to right, #f8b3b4, #f08284);
+  width: 69%;
+}
+aside {
+  padding-left: 15px;
+  margin-left: 15px;
+  writing-mode: vertical-rl;
+  float: left;
 }
 
 .caret {
@@ -38,14 +46,18 @@ hr {
 }
 
 @keyframes blinker {
-  50% {
+  69% {
     opacity: 0;
   }
 }
 
+#baybayin {
+  font-family: 'noto sans tagalog';
+}
+
 .main {
     padding: 3px;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     text-align: justify;
     font-size: 15pt;
@@ -66,8 +78,12 @@ hr {
 }
 
 .hed {
-  text-align: center;
-  font-size: 30px;
+  margin: auto;
+  padding: 3px;
+  max-width: 69%;
+  text-align:center; 
+  margin-right: auto;
+  font-size: 30px; 
 }
 
 .h1 {
@@ -75,7 +91,7 @@ hr {
 }
 
 
- .header {
+.header {
   overflow: hidden;
   padding: 20px 10px;
 }
@@ -94,7 +110,7 @@ hr {
 }
 
 .header a:hover {
-  background-color: #ff95af;
+  background-image: linear-gradient( rgb(255, 242, 242), rgb(255, 149, 175));
 }
   
 .header-right {
@@ -128,7 +144,7 @@ hr {
 
 
 #li {
-  background-color: #fdfdfd;
+  background-image: linear-gradient(150deg, rgba(255,0,0,0), rgba(248, 163, 164, 0.308));
   color: #111111;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   border-radius: 5px; 
@@ -137,21 +153,32 @@ hr {
   margin-left: 50px; 
   width: 80%;
   overflow: auto;
+  transition: transform 0.5s ease;
+}
+
+#li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
 }
 
 #posts a{
   text-decoration: none;
 }
   
-.warning {
-        width: 100%;
-        padding: 10px 0;
-        background-color: yellow;
-        color: black;
+#donate {
+  max-width: 90%;
+  margin: auto;
 }
 
 #donate img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px; 
+  transition: transform 0.5s ease;
+}
+
+#donate img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
 }
 
 /* body {
