@@ -25,6 +25,10 @@
 
         <a class="logo" href="/index.html">~> Mclnoot<span class="caret">_</span></a>
 
+        <div class="mid-header">
+          <button onclick="toggleMode()" id="light-switch"> [      ] </button>
+        </div>
+
         <div class="header-right">
         <!-- <a class="active" href="#home">Hoem</a> -->
           <a href="#portfolio">Portfolio</a>
@@ -33,8 +37,7 @@
         </div>
 
       </div>
-
-
+      <div class="hero">
       <div class="hed" id="home">
         
         <img src="misc/McChristmas(MUG).png" alt="Avatar" class="avatar">
@@ -42,9 +45,10 @@
           <b id="baybayin">ᜃᜋᜓᜐ᜔ᜆ ᜉᜓ </b>
           <span>👋</span>
         </p>
-        <article>
-          <p>I'm Mclnoot a.k.a FanMclaine, I am your local <a href="https://wikiless.tiekoetter.com/wiki/Free_and_open-source_software?lang=en">FOSS</a> enthusiast and annoying dumbass who loves hobby-hopping. </p>
+        <article id="intro">
+          <p>Your dumbass <a href="https://wikiless.tiekoetter.com/wiki/Free_and_open-source_software?lang=en">FOSS</a> enjoyer, <br>Speedcuber, Hobby-hopper, <br>Artist, Shitposter, and dumbass. </p>
         </article>
+
 
         <div class="contact" id="contact">
 
@@ -68,14 +72,44 @@
 
 
       </div>
+      <div class="image-dic">
+        <img src="misc/filipino_food.webp" alt="Placeholder image" title="Placeholder image :p" class="image">
+      </div> 
+      </div> 
       <!-- <a href="https://github.com/fanmclaine"><img src="/misc/github.svg" alt="github" class="icon" width="50" height="50"></a><a href="https://lea.pet/@mclnooted"><img src="/misc/fedi.svg" alt="Fedi" class="icon" width="50" height="50"></a> -->
       <br>
 
-      <hr noshade style="width:60%;">
+      <!-- <hr noshade style="width:60%;"> -->
+      <br>
+
+      <div class="about" id="about">
+
+        <h2>~> <span id="impact">About</span> :::::::::</h2>
+        
+        <div class="aboutme">
+          <p> Hello I am Mclnoot, formerly FanMclaine, but please just call me Mclnoot :p.</p><!-- Hidden content -->
+          <p>I'm mainly into speedcubing, artsy stuffs, web designing, coding, and calisthenics.</p>
+          <input type="checkbox" id="read-more-toggle" style="display: none;">
+          <div class="hidden-content">
+          <p>I'm currently learning Javascript and C, and drawing eastern style</p>
+          <br><p>Hopefully, i can use this website to showcase my coding projects and drawings.</p>
+          <p>And also to showcase my writing and shitposting skills by writing blogs :3</p>
+          <p>I also helped translate some oss projects (only 1 so far :trol:)</p>
+          <br><p>My main cube: Moyu Rs3m V5 [Dual Adjustment]</p>
+          <p>PB: 12.13 seconds </p>
+          <br><br><p>I HECKING LOVE <span id="gradient">ZUTOMAYO</span> !!!!!! dont sybau me</p>
+          </div>
+
+          <!-- Label for the checkbox -->
+          <label for="read-more-toggle" class="read-more-btn">...</label>
+        </div>
+
+        
+      </div><br><hr><br>
 
       <div class="portfolio" id="portfolio">
 
-        <aside><h4>~>ls My Portfloio :::::::</h4></aside>
+        <h2><span class="normal">~> <span id="impact">Portfloio</span> :::::::::::</span></h2> 
 
 
         <div class="project1" id="li"> 
@@ -91,13 +125,14 @@
       </div>
       <br>
 
-
-      <hr noshade style="width:60%;">
+<hr>
+<br>
 
 
       <div id="posts">
         <!-- # Posts -->
-        <aside><h4>~> Blogs.sh ::::::::::</h4></aside>
+        <h2>~> <span id="impact">Blogs.sh</span> ::::::::::</h2> 
+        <br>
         <!-- type new posts below -->
         <div id="li">
           <b><a href="posts/UpdateAbtNoot">Update about Mclnoot</a></b><br>
@@ -111,11 +146,11 @@
             
         </div>
         <br>
-        <hr noshade style="width:55%;">
-        <br>
+        <br><br><br><br>
       </div>
       <div id="donate">
-        <h3>~> cat Donations</h3>
+        <h2>~> <span id="impact">Donations</span> ::::::::::::::::::::::::</h2>
+        <br>
         <a style="display: flex; justify-content: center;" href="https://janderedev.xyz/images/pinpad.jpg" target="_blank">
           <img src="misc/credit_card.jpg" style="height: auto; width: 50%" alt="insert_credit_card">
         </a>

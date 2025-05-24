@@ -15,30 +15,47 @@ html {
 
 body{
   font-family: 'Fira Code', monospace;
-  background: radial-gradient(circle, #eee2e2, #f5f5f5);
+  background: radial-gradient(circle, #eee8e8, #ececec);
   color: #222024;
+  transition: color 0.6s ease;
 }
 
 .dark-mode {
-  background-color: #222024;
-  color: #f5f5f5;
+  background: radial-gradient(circle,#181818, #1d1d1d);
+  color: #dbdada;
 }
 
 a {
   color: #fd797c;
 }
 
-hr {
-  height:2px;
-  border: 0;
-  background: linear-gradient(to right, #f8b3b4, #f08284);
-  width: 69%;
+
+h2 {
+  margin-bottom: 10px;
+  padding: 20px 10px;
 }
-aside {
-  padding-left: 15px;
-  margin-left: 15px;
+
+.normal {
+  float:left;
   writing-mode: vertical-rl;
-  float: left;
+}
+
+hr {
+  height: 2px;
+  border:none;
+  background: linear-gradient(to right, #f5a7a8, #eb686b);
+  width: 45%;
+}
+
+
+#gradient {
+  background: linear-gradient(to right, #ac27e9, #db46a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#impact {
+  font-family: 'Bebas Neue';
 }
 
 .caret {
@@ -55,6 +72,16 @@ aside {
   font-family: 'noto sans tagalog';
 }
 
+#light-switch {
+  background: radial-gradient(circle, hsla(281, 82%, 53%, 0.5), hsla(323, 67%, 57%, 0.5));
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  rotate: 45deg;
+  color:rgba(0, 0, 0, 0.0);
+}
+
 .main {
     padding: 3px;
     max-width: 90%;
@@ -62,6 +89,10 @@ aside {
     text-align: justify;
     font-size: 15pt;
     border-radius: 5px;
+}
+
+.hero {
+  display: flex;
 }
 
 .avatar { 
@@ -78,43 +109,75 @@ aside {
 }
 
 .hed {
-  margin: auto;
-  padding: 3px;
-  max-width: 69%;
-  text-align:center; 
-  margin-right: auto;
-  font-size: 30px; 
+  margin: 69px;
+  max-width: 59%;
+  font-size: 30px;
 }
 
 .h1 {
   font-size: 37px;
 }
 
+.image-dic {
+  flex-grow: 1;
+}
+
+.image {
+            width: 350px;
+            height: 350px;
+            float: right;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.3;
+  margin: 110px;
+  border-radius: 10%;
+}
+
+@keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
 
 .header {
+  position: sticky;
+  top: 0;
   overflow: hidden;
   padding: 20px 10px;
+}
+
+.mid-header {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
  /* Style the header links */
 .header a {
   float: left;
-  color: #111111;
   text-align: center;
+  color: inherit;
   padding: 12px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 25px;
   border-radius: 4px;
   transition: 0.5s;
 }
 
 .header a:hover {
-  background-image: linear-gradient( rgb(255, 242, 242), rgb(255, 149, 175));
+  background-image: linear-gradient( rgba(255, 242, 242, 0.007), rgb(255, 149, 175));
 }
   
 .header-right {
   float: right;
+}
+
+#intro {
+  letter-spacing: 3px;
 }
 
 .contact {
@@ -124,6 +187,42 @@ aside {
 
 .contact a {
   text-decoration: none;
+}
+
+.aboutme {
+  margin-left: 69px;
+  padding:15px;
+  margin-bottom: 90px;
+  font-size: 19px;
+}
+
+.hidden-content {
+  max-height: 0; /* Collapsed by default */
+  opacity: 0; /* Fully transparent */
+  overflow: hidden; /* Prevent content from overflowing */
+  transition: max-height 1s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+#read-more-toggle:checked ~ .hidden-content {
+  max-height: 569px;
+  opacity: 1;
+}
+
+#read-more-toggle:checked ~ .read-more-btn::after {
+  content: " Read Less";
+}
+
+.read-more-btn {
+  cursor: pointer;
+  color: #fd797c;
+}
+
+.read-more-btn::after {
+  content: " Read More";
+}
+
+.portfolio {
+  margin-bottom: 100px;
 }
 
 .github {  
@@ -144,15 +243,14 @@ aside {
 
 
 #li {
-  background-image: linear-gradient(150deg, rgba(255,0,0,0), rgba(248, 163, 164, 0.308));
-  color: #111111;
+  background-image: linear-gradient(150deg, rgba(255,0,0,0), rgba(248, 163, 164, 0.45));
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   border-radius: 5px; 
   padding: 20px;
   margin: 10px;
-  margin-left: 50px; 
-  width: 80%;
+  width: 69%;
   overflow: auto;
+  margin: auto;
   transition: transform 0.5s ease;
 }
 
@@ -161,14 +259,14 @@ aside {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
 }
 
+.posts {
+  margin-bottom: 100px;
+}
+
 #posts a{
   text-decoration: none;
 }
-  
-#donate {
-  max-width: 90%;
-  margin: auto;
-}
+
 
 #donate img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
