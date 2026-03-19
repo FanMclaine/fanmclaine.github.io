@@ -15,13 +15,13 @@ html {
 
 body{
   font-family: 'Fira Code', monospace;
-  background: radial-gradient(circle, #eee8e8, #ececec);
+  background: radial-gradient(circle, #eee8e8, #c2bcbc);
   color: #222024;
   transition: color 0.6s ease;
 }
 
 .dark-mode {
-  background: radial-gradient(circle,#181818, #1d1d1d);
+  background: radial-gradient(circle,#181818, #202020);
   color: #dbdada;
 }
 
@@ -66,6 +66,38 @@ hr {
   69% {
     opacity: 0;
   }
+}
+
+.click-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.hint-text {
+  font-family: 'Fira Code', monospace;
+  font-size: 10px;
+  color: #fd797c;
+  letter-spacing: 2px;
+  animation: hint-fade 2s ease-in-out infinite;
+}
+
+.hint-arrow {
+  font-size: 14px;
+  color: #fd797c;
+  animation: hint-bounce 1s ease-in-out infinite;
+}
+
+@keyframes hint-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(4px); }
+}
+
+@keyframes hint-fade {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
 }
 
 #baybayin {
@@ -307,4 +339,161 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   image-rendering: -moz-crisp-edges;
+}
+
+/* =====================
+   MOBILE RESPONSIVENESS
+   ===================== */
+
+/* Global: prevent horizontal overflow */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Tablet & below (max 768px) --- */
+@media (max-width: 768px) {
+
+  .main {
+    max-width: 100%;
+    padding: 8px;
+    font-size: 13pt;
+  }
+
+  /* Header: stack logo and nav vertically */
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+    gap: 6px;
+  }
+
+  .mid-header {
+    position: static;
+    transform: none;
+    order: 2;
+  }
+
+  .header-right {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    order: 3;
+    width: 100%;
+  }
+
+  .header a {
+    float: none;
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+
+  /* Hero: stack vertically, hide food image */
+  .hero {
+    flex-direction: column;
+  }
+
+  .hed {
+    margin: 20px 10px;
+    max-width: 100%;
+    font-size: 20px;
+  }
+
+  .h1 {
+    font-size: 26px;
+  }
+
+  /* Hide the floating food image on mobile — it eats too much space */
+  .image-dic {
+    display: none;
+  }
+
+  /* Contact badges: wrap instead of overflow */
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .contact img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* About section */
+  .aboutme {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  /* Dropdown: uncap the min-width that was breaking mobile */
+  .dropdown-cntn {
+    min-width: unset;
+    width: 100%;
+  }
+
+  /* Portfolio card */
+  #li {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Portfolio project image: remove float, stack below text */
+  .project1 img[width="450"] {
+    float: none !important;
+    margin: 10px 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Portfolio heading — keep vertical text only on desktop */
+  .normal {
+    writing-mode: horizontal-tb;
+    float: none;
+  }
+
+  /* HR width */
+  hr {
+    width: 90%;
+  }
+
+  /* Footer gifs */
+  footer img {
+    max-width: 80px;
+    height: auto;
+  }
+}
+
+/* --- Small phones (max 480px) --- */
+@media (max-width: 480px) {
+
+  .hed {
+    margin: 12px 6px;
+    font-size: 16px;
+  }
+
+  .h1 {
+    font-size: 22px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header a {
+    font-size: 13px;
+    padding: 5px 7px;
+  }
+
+  #donate img {
+    width: 85% !important;
+  }
 }
